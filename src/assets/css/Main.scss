@@ -1,0 +1,64 @@
+﻿@import "./Utils";
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body{
+  background: $dark-blue;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-panel{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 600px;
+  background: #6c8297;
+  border-radius: 10px;
+}
+
+.main-panel__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  h1{
+    color: $white-text;
+    text-align: center;
+  }
+}
+
+.main-panel__divider{
+  border-color: $dark-blue;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.main-panel__body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-input{
+  width: 50%;
+  margin: 10px 0;
+  background: $dark-blue;
+  color: $white-text;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
